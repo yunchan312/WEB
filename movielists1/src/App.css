@@ -17,6 +17,12 @@ body{
   padding: 20px;
   background: #eee;
 }
+.remove{
+  margin-left: 15px;
+  border-radius: 0;
+  border:1px solid black;
+  background-color: white;
+}
 
 .black-nav{
   background: black;

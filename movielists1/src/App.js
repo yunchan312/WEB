@@ -60,9 +60,10 @@ function App() {
         </button>
         {content.map((e, idx) => (
           <div key={idx}>
-          <span>{e}</span>
+          <h3 className="list">{e}
+          <button className="remove" onClick={() => handleRemove(idx)}>제거</button></h3>
           &nbsp;
-          <button onClick={() => handleRemove(idx)}>제거</button> 
+          <hr/>
         </div>
         ))}
 
