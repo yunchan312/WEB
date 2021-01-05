@@ -1,5 +1,5 @@
 import React from 'react';
-
+//Reports page
 function Reports(){
     return(
         <div className='reports'>

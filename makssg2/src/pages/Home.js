@@ -1,5 +1,5 @@
 import React from 'react';
-
+//Home page
 function Home(){
     return(
         <div className='home'>

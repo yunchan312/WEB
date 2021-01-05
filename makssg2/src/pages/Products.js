@@ -1,5 +1,5 @@
 import React from 'react';
-
+//product page
 function Products(){
     return(
         <div className='products'>

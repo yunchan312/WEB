@@ -31,8 +31,8 @@ function App() {
           <Route path='/reports' component={Reports} />
           <Route path='/products' component={Products} />
         </Switch>
-
-        <div className="footer">
+        
+        <div className="footer"> 
             <div className="socials">
               <a href="https://www.facebook.com" style={{color: '#deb887'}} className="icons">
                 <SiFacebook size={28}/>
