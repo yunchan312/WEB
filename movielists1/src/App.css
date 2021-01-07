@@ -1,6 +1,15 @@
 .App {
   text-align: center;
 }
+.date{
+  display: flex;
+  justify-content: start;
+
+}
+.inputContent{
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 body{
   font-family: 'nanumsquare';
@@ -15,7 +24,7 @@ body{
   text-align: left;
   margin-top:20px;
   padding: 20px;
-  background-color: gray;
+  background-color: #eee;
 }
 .remove{
   margin-left: 15px;
@@ -39,7 +48,9 @@ body{
   padding-left: 20px;
   padding-right: 20px;
 }
-
+.inputContent h3{
+  padding-left: 0;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

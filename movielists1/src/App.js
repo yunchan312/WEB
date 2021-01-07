@@ -1,8 +1,8 @@
 /*eslint-disable*/
 
-import logo from './logo.svg';
 import './App.css';
 import React, {useState} from 'react';
+import moment from 'moment';
 
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
   let [text, changeText] = useState('');
   let [content, contentChange] = useState([]);
   let [따봉, 따봉변경] = useState(0);
+  var today = new Date();
 
   /*function 남여변환(){
     var newArray = [...글제목];
@@ -59,12 +60,13 @@ function App() {
           등록
         </button>
         {content.map((e, idx) => (
-          <div key={idx}>
-          <h3 className="list">{e}
-          <button className="remove" onClick={() => handleRemove(idx)}>제거</button></h3>
-          &nbsp;
-          <hr/>
-        </div>
+          <div key={idx} className="inputContent">
+            <h3 className="list">{e}
+            <button className="remove" onClick={() => handleRemove(idx)}>제거</button></h3>
+            &nbsp;
+            <div className="date">{today.getFullYear()}년 {today.getMonth()+1}월 {today.getDate()}일 발행</div>
+            <hr/>
+          </div>
         ))}
 
       <div className="list">
