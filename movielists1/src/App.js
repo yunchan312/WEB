@@ -2,7 +2,9 @@
 
 import './App.css';
 import React, {useState} from 'react';
-import moment from 'moment';
+import {Link} from 'react-router-dom';
+import content from './component/content';
+
 
 
 function App() {
@@ -12,11 +14,6 @@ function App() {
   let [따봉, 따봉변경] = useState(0);
   var today = new Date();
 
-  /*function 남여변환(){
-    var newArray = [...글제목];
-    newArray[0] = '여자코트 추천';
-    글제목변경( newArray );
-  }*/
   function handleOnKeyPress(e){
     if(e.key === 'Enter'){
       handleOnSubmit();
@@ -63,7 +60,6 @@ function App() {
           <div key={idx} className="inputContent">
             <h3 className="list">{e}
             <button className="remove" onClick={() => handleRemove(idx)}>제거</button></h3>
-            &nbsp;
             <div className="date">{today.getFullYear()}년 {today.getMonth()+1}월 {today.getDate()}일 발행</div>
             <hr/>
           </div>
@@ -84,21 +80,16 @@ function App() {
         <p>2월 19일 발행</p>
         <hr/>
       </div>
-      
-      <Modal />
+      <Router>
+        <Link to='./component/content' className='content'>
+          content
+        </Link>
+      </Router>
+
 
     </div>
   );
 }
 
-function Modal(){
-  return(
-    <div className="modal">
-        <h2>제목</h2>
-        <p>날짜</p>
-        <p>상세내용</p>
-      </div>
-  )
-}
 
 export default App;
