@@ -3,7 +3,6 @@
 import './App.css';
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
-import content from './component/content';
 
 
 
@@ -65,28 +64,27 @@ function App() {
           </div>
         ))}
 
-      <div className="list">
-        <h3> {글제목[0]} <span onClick={()=>{ 따봉변경( 따봉 + 1)}}>👍</span> {따봉} </h3>
-        <p>2월 17일 발행</p>
-        <hr/>
-      </div>
-      <div className="list">
-        <h3> {글제목[1]} </h3>
-        <p>2월 18일 발행</p>
-        <hr/>
-      </div>
-      <div className="list">
-        <h3> {글제목[2]} </h3>
-        <p>2월 19일 발행</p>
-        <hr/>
-      </div>
-      <Router>
-        <Link to='./component/content' className='content'>
-          content
-        </Link>
-      </Router>
-
-
+        <Router>
+          <Switch>
+            <Route>
+              <div className="list">
+                <h3> {글제목[0]} <span onClick={()=>{ 따봉변경( 따봉 + 1)}}>👍</span> {따봉} </h3>
+                <p>2월 17일 발행</p>
+                <hr/>
+              </div>
+            </Route>
+            <div className="list">
+              <h3> {글제목[1]} </h3>
+              <p>2월 18일 발행</p>
+              <hr/>
+            </div>
+            <div className="list">
+              <h3> {글제목[2]} </h3>
+              <p>2월 19일 발행</p>
+              <hr/>
+            </div>
+          </Switch>
+        </Router>
     </div>
   );
 }
