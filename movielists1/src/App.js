@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 
 
 function App() {
-  let [글제목,글제목변경] =  useState(['남자코트 추천', '강남 우동맛집', '파이썬씨발']);
+  let [글제목,글제목변경] =  useState(['남자코트 추천', '강남 우동맛집', '파이썬']);
   let [text, changeText] = useState('');
   let [content, contentChange] = useState([]);
   let [따봉, 따봉변경] = useState(0);
@@ -52,7 +52,7 @@ function App() {
         value={text}
         onChange={handleOnChange}
         onKeyPress={handleOnKeyPress} />
-        <button type='submit' onClick={handleOnSubmit}>
+        <button className="submittings" type='submit' onClick={handleOnSubmit}>
           등록
         </button>
         {content.map((e, idx) => (
@@ -64,15 +64,11 @@ function App() {
           </div>
         ))}
 
-        <Router>
-          <Switch>
-            <Route>
               <div className="list">
                 <h3> {글제목[0]} <span onClick={()=>{ 따봉변경( 따봉 + 1)}}>👍</span> {따봉} </h3>
                 <p>2월 17일 발행</p>
                 <hr/>
               </div>
-            </Route>
             <div className="list">
               <h3> {글제목[1]} </h3>
               <p>2월 18일 발행</p>
@@ -83,8 +79,6 @@ function App() {
               <p>2월 19일 발행</p>
               <hr/>
             </div>
-          </Switch>
-        </Router>
     </div>
   );
 }
