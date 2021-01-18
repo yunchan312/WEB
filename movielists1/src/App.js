@@ -45,7 +45,7 @@ function App() {
   return (
     <div className="App">
       <div className="black-nav">
-        <div style={{ fontSize : '20px' }}>개발 Blog</div>
+        <div style={{ fontSize : '20px' }}>K-Blog</div>
       </div>
       
       <input className="texting"
@@ -55,6 +55,7 @@ function App() {
         <button className="submittings" type='submit' onClick={handleOnSubmit}>
           등록
         </button>
+        <div className="list-name">🤞Lists🤞</div><hr/>
         {content.map((e, idx) => (
           <div key={idx} className="inputContent">
             <h3 className="list">{e}
