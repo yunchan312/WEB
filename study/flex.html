@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid gray;
+        }
+        header{
+            border-bottom:1px solid gray;
+            padding-left:20px;
+        }
+        footer{
+            border-top:1px solid gray;
+            padding:20px;
+            text-align: center;
+        }
+        .content{
+            display:flex;
+        }
+        
+        .content aside{
+            padding-left: 10px;
+            text-align: center;
+        }
+        nav, aside{
+            flex-basis: 150px;
+            flex-shrink: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        main{
+            padding:10px;
+            border-right: 1px solid gray;
+            border-left: 1px solid gray;
+        }
+        nav{
+            order: 0;
+        }
+        main{
+            order: 1;
+        }
+        aside{
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <main>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>
+                    que impedit, eos in quos assumenda illo eum dicta. Voluptatum quaerat ex
+                    cepturi consectetur, doloremque esse deleniti commodi natus, maxime sit? Of
+                    ficia rerum quibusdam porro dolorum numquam harum soluta ex quo! Vero, 
+                    nam? Necessitatibus rem hic perferendis maiores obcaecati volupt
+                    ate s
+                    unt autem id doloribus, similique repudiandae nesciunt vel facere ex accus
+                    antium ipsum provident iste itaque? Perferendis culpa nostru
+                    repellendus dolores repudiandae assumenda, tempora laudantium in q
+                    uibusdam placeat facilis ex voluptatem provident velit iusto fuga eum nobis
+                    deserunt enim minus. Explicabo vel labore, eum doloremque, impedit recusan
+                    dae aut illum corporis quis atque sit vero quasi tempore placeat ipsam simili
+                    que quo delectus provident animi distinctio debitis eligendi voluptatum! Dolor
+                    em perspiciatis similique non fugit eaque? Commodi suscipit earum aliquam rem,
+                    neque ad. Obcaecati nisi beatae officia inventore laborum
+                    nostrum natus perspiciatis iste, aperiam vero quisquam saepe labore f
+                </p>
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="https://opentutorials.org/course/1">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>

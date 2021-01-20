@@ -1,3 +1,4 @@
+/*사이드바 아이콘*/
 import React, { useState } from 'react'
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';

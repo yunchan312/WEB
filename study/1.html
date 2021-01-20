@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+  <head>
+    <title>가사모음: 짙은</title>
+    <meta cahrset="utf-8">
+    <style>
+      body{
+        margin:0;
+      }
+      #active{
+        color:red;
+      }
+      .saw{
+        color:gray;
+      }
+      h1{
+        text-align:center;
+        border-bottom: 2px solid black;
+        padding-bottom: 30px;
+        margin: 0;
+      }
+      a{
+        color:black;
+        text-decoration:none;
+      }
+      li{
+        font-size:25px;
+      }
+      ol{
+        border-right: 2px solid black;
+        width:150px;
+        margin:0;
+        padding:60px;
+      }
+      .lyrics{
+        margin-left: 55px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 300px 6fr;
+      }
+      #grid2{
+        display: grid;
+        grid-template-columns: 600px 600px;
+      }
+      @media(max-width:1000px)
+      {
+        #grid{
+          display: block;
+        }
+        ol{
+          border-right:none;
+        }
+        #grid2{
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="id1"><a href="index.html" style="font-size:50px">가사</a></h1>
+    <div id="grid">
+      <ol style="font-weight:bold;">
+        <li><a href="2.html" class="saw">장범준</a></li>
+        <li><a href="3.html" class="saw">오마이걸</a></li>
+        <li><a href="1.html" class="saw" id="active">짙은</a></li>
+      </ol>
+
+      <div id="grid2">
+        <div>
+          <input id="night_day" type="button" value="night" onclick="
+          var target = document.querySelector('body');
+          if(document.querySelector('#night_day').value === 'night'){
+            target.style.backgroundColor='black';
+            target.style.color='yellow';
+            document.querySelector('#night_day').value = 'day';
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            var el = document.getElementById('id1');
+            while(i < alist.length) {
+                  alist[i].style.color = 'yellow';
+                  i = i+1;
+              }
+              if(alist.style.color == 'yellow'){
+                id1.style.borderColor = 'yellow';
+              }
+          }
+  
+          else{
+            target.style.backgroundColor='white';
+            target.style.color='black'; 
+            document.querySelector('#night_day').value = 'night';
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length) {
+                  alist[i].style.color = 'black';
+                  i = i+1;
+              }   
+          }
+        ">
+          <a href="https://www.google.com/search?q=%EC%A7%99%EC%9D%80+%EC%9E%98%EC%A7%80%EB%82%B4%EC%9E%90+%EC%9A%B0%EB%A6%AC&oq=%EC%A7%99%EC%9D%80&aqs=chrome.1.69i57j35i39j0l3j69i61l2j69i60.4249j0j7&sourceid=chrome&ie=UTF-8"
+          target="_blank" title="짙은-잘지내자 우리" style="color:black; text-decoration:underline"><h3><br>짙은 - 잘 지내자 우리</h3></a>
+         
+          <img  width="250" src="flower.jpg">
+
+          <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/e-ijD7kdTs4"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          </p>
+        </div>
+
+        <div class="lyrics" style="font-size:20px">
+          <p>마음을 다 보여줬던 너와는 다르게<br>
+          지난 사랑에 겁을 잔뜩 먹은 나는<br>
+          뒷걸음질만 쳤다<br>
+          너는 다가오려 했지만<br>
+          분명 언젠가 떠나갈 것이라 생각해<br>
+          도망치기만 했다<br>
+          같이 구름 걸터앉은 나무 바라보며<br>
+          잔디밭에 누워 한 쪽 귀로만 듣던 달콤한 노래들이<br>
+          쓰디쓴 아픔이 되어 다시 돌아올 것만 같아<br></p>
+
+          <p>분명 언젠가 다시 스칠 날 있겠지만<br>
+          모른 척 지나가겠지<br>
+          최선을 다한 넌 받아들이겠지만<br>
+          서툴렀던 나는 아직도 기적을 꿈꾼다<br>
+          눈 마주치며 그땐 미안했었다고<br>
+          용서해달라고 얘기하는 날<br>
+          그때까지 잘 지내자 우리, 우리<br></p>
+
+          <p>지금 생각해보면 그까짓 두려움<br>
+          내가 바보 같았지 하며<br>
+          솔직해질 자신 있으니<br>
+          돌아오기만 하면 좋겠다<br></p>
+
+          <p>분명 언젠가 다시 스칠 날 있겠지만<br>
+          모른 척 지나가겠지<br>
+          최선을 다한 넌 받아들이겠지만<br>
+          서툴렀던 나는 아직도 기적을 꿈꾼다<br>
+          눈 마주치며 그땐 미안했었다고<br>
+          용서해달라고 얘기하는 날<br>
+          그때까지 잘 지내자 우리, 우리<br>
+          눈 마주치며 그땐 미안했다고<br>
+          용서해달라고 이야기 하는 날<br>
+          그때까지<br><br>
+
+          잘 지내자<br>
+
+          우리<br></p>
+        </div>
+      </div>
+    </div>
+    <!--<input id="night_day2" type="button" value="night" onclick="
+    if(this.value === 'night'){
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    this.value = 'day';
+    }
+
+    else{
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black'; 
+      this.value = 'night';
+    }
+  ">-->
+  </body>
+</html>

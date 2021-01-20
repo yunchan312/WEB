@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #0b2e50;
+}
+nav{
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 5%;
+}
+.WOW{
+  background-color: pink;
+}
+img {
+  display: flex;
+  padding-top:50%;
+  padding-bottom:50%;
+  
+}
+h1{
+  display: flex;
+  justify-content: center;
+  color : white;
+}
+footer {
+  color : gray;
+}
